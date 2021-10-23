@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 22 20:26:56 2021
+# Process ID: 13472
+# Current directory: C:/Users/restr/Desktop/Procesador/procesador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1708 C:\Users\restr\Desktop\Procesador\procesador\procesador.xpr
+# Log file: C:/Users/restr/Desktop/Procesador/procesador/vivado.log
+# Journal file: C:/Users/restr/Desktop/Procesador/procesador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/restr/Desktop/Procesador/procesador/procesador.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux3to1_32B.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux3to1_32B.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design

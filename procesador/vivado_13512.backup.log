@@ -1,0 +1,454 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 20 19:15:30 2021
+# Process ID: 13512
+# Current directory: C:/Users/restr/Desktop/Procesador/procesador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1504 C:\Users\restr\Desktop\Procesador\procesador\procesador.xpr
+# Log file: C:/Users/restr/Desktop/Procesador/procesador/vivado.log
+# Journal file: C:/Users/restr/Desktop/Procesador/procesador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/restr/Desktop/Procesador/procesador/procesador.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ciscoseg/Desktop/Procesador/procesador' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/restr/Desktop/Procesador/procesador/procesador.gen/sources_1', nor could it be found using path 'C:/Users/ciscoseg/Desktop/Procesador/procesador/procesador.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 1005.758 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top mipsALU [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: mipsALU
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1249.164 ; gain = 243.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mipsALU' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mipsALU.vhd:34]
+WARNING: [Synth 8-614] signal 'result_temp' is read in the process but is not in the sensitivity list [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mipsALU.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'mipsALU' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mipsALU.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1325.719 ; gain = 319.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.719 ; gain = 319.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1325.719 ; gain = 319.961
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1325.719 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1360.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1465.562 ; gain = 459.805
+5 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 1465.562 ; gain = 459.805
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1527.699 ; gain = 42.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mipsALU' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mipsALU.vhd:34]
+WARNING: [Synth 8-614] signal 'result_temp' is read in the process but is not in the sensitivity list [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mipsALU.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'mipsALU' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mipsALU.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1571.918 ; gain = 87.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1592.820 ; gain = 108.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1592.820 ; gain = 108.031
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1592.820 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1592.820 ; gain = 108.031
+set_property top MIPSprocessor [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1592.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1592.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1599.227 ; gain = 6.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1599.227 ; gain = 6.406
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1601.680 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1601.680 ; gain = 8.859
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1642.824 ; gain = 19.766
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'MIPSprocessor' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1642.824 ; gain = 19.766
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1642.824 ; gain = 19.766
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1666.566 ; gain = 14.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:66]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1666.566 ; gain = 14.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1666.570 ; gain = 14.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1666.570 ; gain = 14.879
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1666.570 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1666.570 ; gain = 14.879
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1703.590 ; gain = 20.797
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2715] syntax error near ) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:96]
+WARNING: [Synth 8-1090] 'mux2to1_32b' is not compiled in library work [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:90]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1703.590 ; gain = 20.797
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1703.590 ; gain = 20.797
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1709.504 ; gain = 5.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:73]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux02' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32B' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (4#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1709.504 ; gain = 5.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1709.504 ; gain = 5.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1709.504 ; gain = 5.914
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1711.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1713.961 ; gain = 10.371
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1722.938 ; gain = 8.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:85]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux02' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32B' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-3491] module 'MIPSregisters' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:28' bound to instance 'regFile' of component 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MIPSregisters' (4#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (5#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1722.961 ; gain = 9.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1724.945 ; gain = 10.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1724.945 ; gain = 10.984
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1727.285 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1727.285 ; gain = 13.324
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:85]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux02' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32B' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-3491] module 'MIPSregisters' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:28' bound to instance 'regFile' of component 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MIPSregisters' (4#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regA' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:122]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regB' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (5#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1727.285 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1727.285 ; gain = 0.000
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:90]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux02' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32B' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-3491] module 'MIPSregisters' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:28' bound to instance 'regFile' of component 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MIPSregisters' (4#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regA' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:127]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regB' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:136]
+INFO: [Synth 8-3491] module 'signExtend' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:25' bound to instance 'signExt' of component 'signExtend' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'signExtend' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'signExtend' (5#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (6#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1727.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1728.559 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1728.559 ; gain = 1.273
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1731.281 ; gain = 2.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:102]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux02' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32B' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-3491] module 'MIPSregisters' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:28' bound to instance 'regFile' of component 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MIPSregisters' (4#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regA' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:139]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regB' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:148]
+INFO: [Synth 8-3491] module 'signExtend' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:25' bound to instance 'signExt' of component 'signExtend' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'signExtend' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'signExtend' (5#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:30]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux03' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:163]
+INFO: [Synth 8-3491] module 'mux4to1_32b' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux4to1_32b.vhd:25' bound to instance 'mux04' of component 'mux4to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'mux4to1_32b' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux4to1_32b.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'mux4to1_32b' (6#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux4to1_32b.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (7#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1731.281 ; gain = 2.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1733.266 ; gain = 4.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1733.266 ; gain = 4.176
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1733.266 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1733.266 ; gain = 4.176
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1734.895 ; gain = 1.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSprocessor' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'irReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'reg32B' (1#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:33]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'mdReg' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:108]
+INFO: [Synth 8-3491] module 'mux2to1_5B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:25' bound to instance 'mux01' of component 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_5B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_5B' (2#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd:32]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux02' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1_32B' (3#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:32]
+INFO: [Synth 8-3491] module 'MIPSregisters' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:28' bound to instance 'regFile' of component 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'MIPSregisters' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MIPSregisters' (4#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSregisters.vhd:39]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regA' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:145]
+INFO: [Synth 8-3491] module 'reg32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/reg32B.vhd:25' bound to instance 'regB' of component 'reg32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:154]
+INFO: [Synth 8-3491] module 'signExtend' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:25' bound to instance 'signExt' of component 'signExtend' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'signExtend' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'signExtend' (5#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd:30]
+INFO: [Synth 8-3491] module 'mux2to1_32B' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd:25' bound to instance 'mux03' of component 'mux2to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:169]
+INFO: [Synth 8-3491] module 'mux4to1_32b' declared at 'C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux4to1_32b.vhd:25' bound to instance 'mux04' of component 'mux4to1_32B' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'mux4to1_32b' [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux4to1_32b.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'mux4to1_32b' (6#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux4to1_32b.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'MIPSprocessor' (7#1) [C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/MIPSprocessor.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1734.895 ; gain = 1.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1739.949 ; gain = 6.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1739.949 ; gain = 6.684
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1742.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1742.281 ; gain = 9.016
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 20 21:56:45 2021...

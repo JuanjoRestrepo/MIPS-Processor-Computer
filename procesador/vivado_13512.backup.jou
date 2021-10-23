@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 20 19:15:30 2021
+# Process ID: 13512
+# Current directory: C:/Users/restr/Desktop/Procesador/procesador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1504 C:\Users\restr\Desktop\Procesador\procesador\procesador.xpr
+# Log file: C:/Users/restr/Desktop/Procesador/procesador/vivado.log
+# Journal file: C:/Users/restr/Desktop/Procesador/procesador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/restr/Desktop/Procesador/procesador/procesador.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mipsALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MIPSprocessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_5B.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/mux2to1_32B.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+close [ open C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd w ]
+add_files C:/Users/restr/Desktop/Procesador/procesador/procesador.srcs/sources_1/new/signExtend.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
